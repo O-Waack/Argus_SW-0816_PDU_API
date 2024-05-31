@@ -1,33 +1,14 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*- 
-"""Summary
+
+"""A python API wrapper class for Argus PDU SW-0816 and identical types such as e.g. Intellinet PDU 163682 to use the functions of the poor web interface via an instantiation in a commandline tool.
 """
 import requests
 from lxml import etree as et
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin, urlunsplit
-
-
-
-
-
-""" WARNING - WARNING - WARNING - WARNING - WARNING - WARNING - WARNING
-
-        I STRONGLY DISCOURAGE YOU FROM USING THIS PDU IN PRODUCTION. 
-        IT'S SECURITY IS VIRTUALLY NON EXISTENT AND I FOUND MULTIPLE 
-        EXPLOITABLE VULNERABILITIES JUST WHILE WRITING THIS API WRAPPER 
-
-    WARNING - WARNING - WARNING - WARNING - WARNING - WARNING - WARNING """
-
-
-
-
-
-
+from urllib.parse import urlunsplit
 
 class IPU():
 
-    """This class is represents a api wrapper for the Intellinet IP smart PDU API [163682].
+    """This class is represents a api wrapper for the Argus PDU SW-0816 and identical types.
         It provides all the functionality of the web interface it is based on.
     
     Class-Attributes:
@@ -269,9 +250,9 @@ class IPU():
         list_of_outlet_ids = list_of_outlet_ids or [i for i in range(0, 8)]
 
         if state:
-            return self._set_outlet_states(self, list_of_outlet_ids, state)
+            return self._set_outlet_states(list_of_outlet_ids, state)
 
-        return self._get_outlet_states(self, list_of_outlet_ids)
+        return self._get_outlet_states(list_of_outlet_ids)
 
 
     def _get_outlet_states(self, list_of_outlet_ids):
