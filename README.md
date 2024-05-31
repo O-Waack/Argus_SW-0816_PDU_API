@@ -1,16 +1,9 @@
-# Intellinet IP smart PDU API [163682]
-A python API wrapper for Intellinet IP smart PDU [163682] that allows you to do anything that the web interface provides.
-You can:
-* read all sensors (humidity, temperature)
-* read voltages
-* get states of outlets
-* turn outlets on/off/toffle
-* read and set warning levels
-* ...
+# Argus SW-0816 PDU API 
+A python API wrapper for Argus PDU SW-0816 and identical types such as e.g. Intellinet PDU 163682 to use the functions of the poor web interface via an instantiation in a commandline tool.
 
-You can get one here: https://www.amazon.com/dp/B075TXJFWN (this is not a referral link)
+Product website of the distributor: https://www.inter-tech.de/produktdetails-174/SW-0816_EN.html
 
-Sample images from amazon:
+Example pictures from the distributor website:
 
-![Intellinet smart PDU](https://images-na.ssl-images-amazon.com/images/I/61GjeHxLTrL._SL1500_.jpg)
-![Intellinet smart PDU 2](https://images-na.ssl-images-amazon.com/images/I/61uYPCVnsmL._SL1500_.jpg)
+![Argus PDU SW-0816 1](https://www.inter-tech.de/files/images/ipc/88887284/88887284/1_pdu_sw-0816_homepage.jpg)
+
